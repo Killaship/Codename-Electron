@@ -1,7 +1,11 @@
 bits 16
-org 0xfffe0000
+org 0xf0000
 
-int 0x01
-jmp $
+main:
+  jmp $
 
-times 0x10000-($-$$) db 0xff
+times (0x10000 - 16) - ($ - $$) db 0x00
+
+reset_vector:
+    jmp 0xf000:0
+    times 11 db 0
