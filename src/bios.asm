@@ -2,7 +2,6 @@ bits 16
 org 0xf0000
 
 main:
-  out 0xe9, 0xff
   jmp $
 
 times (0x10000 - 16) - ($ - $$) db 0x00
