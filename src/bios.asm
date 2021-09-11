@@ -8,7 +8,7 @@ main:
   mov dx, 0xe9;
   mov ax, 0x58;
   out dx, ax;
-  jmp $
+  jmp main
 
 times (0x10000 - 16) - ($ - $$) db 0x00
 
