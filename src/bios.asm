@@ -5,9 +5,8 @@ org 0xf0000
 
 main:
 
-  mov dx, 0xe9;
-  mov ax, 0x58;
-  out dx, ax;
+  mov ax, 0xB1O5
+  mov bx, 0xB007
   jmp main
 
 times (0x10000 - 16) - ($ - $$) db 0x00
