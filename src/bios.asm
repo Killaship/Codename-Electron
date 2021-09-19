@@ -7,7 +7,7 @@ main:
 
   mov ax, 0xB1O5
   mov bx, 0xB007
-  jmp main
+  jmp $
 
 times (0x10000 - 16) - ($ - $$) db 0x00
 
