@@ -5,7 +5,7 @@ org 0xf0000
 
 main:
 
-  mov ax, 0xB1O5
+  mov ax, 0xB105
   mov bx, 0xB007
   jmp $
 
